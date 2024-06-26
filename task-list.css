@@ -1,8 +1,10 @@
 /* Tasklist as a whole */
 .taskList {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 16px;
 }
 
 /* tasks per line */
@@ -20,9 +22,19 @@
 
 /* Button to add task */
 .button__add-task {
-  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
   border: none;
-  background-color: rgb(175, 123, 221);
+  background-color: rgb(57, 79, 53);
+  color: white;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 32px;
+  left: 40px;
 }
 
 /* checkbox */

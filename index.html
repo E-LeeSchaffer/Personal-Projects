@@ -12,15 +12,12 @@
     </header>
     <main>
       <form>
-        <label for="round-checkbox" class="taskList" data-js="taskList">
-          <button
-            id="checkbox"
-            class="oneTask checkbox"
-            type="checkbox"
-            hidden
-          ></button>
-          <input class="oneTask" type="text" />
-        </label>
+        <section id="taskList" class="taskList">
+          <label class="task">
+            <input class="oneTask round-checkbox" type="checkbox" />
+            <input class="oneTask" type="text" />
+          </label>
+        </section>
         <button class="button__add-task" type="button" onclick="addTask()">
           +
         </button>
