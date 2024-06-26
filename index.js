@@ -6,10 +6,12 @@ function addTask() {
   // Erstelle die Checkbox
   let checkbox = document.createElement("input");
   checkbox.type = "checkbox";
+  checkbox.className = "oneTask round-checkbox";
 
   // Erstelle das Texteingabefeld
   let textInput = document.createElement("input");
   textInput.type = "text";
+  textInput.className = "oneTask";
 
   // Füge die Checkbox als Kind-Element zum label-Element hinzu
   newTask.appendChild(checkbox);
