@@ -1,4 +1,4 @@
-/* Tasklist as a whole */
+/* Tasklist as a whole
 .taskList {
   display: flex;
   flex-direction: column;
@@ -49,4 +49,51 @@
 
 .checkbox--active {
   background-color: red;
+}
+
+.round-checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.round-checkbox input {
+  opacity: 0; /* Unsichtbare Standard-Checkbox */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+.round-checkbox .custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid black;
+  transition: background-color 0.3s, border-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.round-checkbox .custom-checkbox::after {
+  content: "";
+  width: 30%;
+  height: 70%;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: none;
+  transform: rotate(45deg);
+}
+
+/* defines the color for checked box */
+.round-checkbox input:checked + .custom-checkbox {
+  background-color: var(--green);
+  border-color: black;
+}
+.round-checkbox input:checked + .custom-checkbox::after {
+  display: block;
 }

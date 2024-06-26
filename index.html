@@ -12,12 +12,16 @@
     </header>
     <main>
       <form>
-        <section id="taskList" class="taskList">
-          <label class="task">
-            <input class="oneTask round-checkbox" type="checkbox" />
-            <input class="oneTask" type="text" />
-          </label>
-        </section>
+          <section id="taskList" class="taskList">
+        <label for="checkbox" class="round-checkbox" data-js="taskList"> <!--evtl. class="task"-->
+          <input id="checkbox" type="checkbox" />
+          <span class="custom-checkbox"></span>
+        </label>
+        <!-- <input id="checkbox" class="oneTask checkbox" type="checkbox" /> -->
+        <label for="taskBox" class="taskList" data-js="taskList">
+          <input id="taskBox" class="oneTask" type="text" />
+        </label>
+         </section>
         <button class="button__add-task" type="button" onclick="addTask()">
           +
         </button>
