@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Forced</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Task Forced</h1>
+    </header>
+    <main>
+      <form>
+        <label for="round-checkbox" class="taskList" data-js="taskList">
+          <button
+            id="checkbox"
+            class="oneTask checkbox"
+            type="checkbox"
+            hidden
+          ></button>
+          <input class="oneTask" type="text" />
+        </label>
+        <button class="button__add-task" type="button" onclick="addTask()">
+          +
+        </button>
+      </form>
+    </main>
+    <script src="index.js" defer></script>
+  </body>
+</html>

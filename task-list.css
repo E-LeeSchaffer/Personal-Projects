@@ -1,0 +1,40 @@
+/* Tasklist as a whole */
+.taskList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* tasks per line */
+.task {
+  display: flex;
+  align-items: center;
+}
+
+.taskList input[type="text"] {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 4px;
+  width: 70vw;
+}
+
+/* Button to add task */
+.button__add-task {
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(175, 123, 221);
+}
+
+/* checkbox */
+.checkbox {
+  height: 40px;
+  width: 40px;
+  border-radius: 999px;
+  padding: 4px;
+  cursor: pointer;
+  color: black;
+}
+
+.checkbox--active {
+  background-color: red;
+}
